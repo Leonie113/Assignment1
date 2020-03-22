@@ -25,6 +25,25 @@
 	body {
 		line-height: 1;
 	}
+	.main-container {
+		height: 46px;
+  		width: auto;
+  		padding: 3px;
+  		margin: 2px;
+  		max-width: 300px;
+  		background-color: #555555;
+  		align-content: center;
+	}
+	.container-inner {
+		height: auto;
+  		border: none;
+  		background-color: #f21040;
+ 		max-width: 290px;
+  		vertical-align: center;
+  		padding-top: 12px;
+  		padding-left: 10px;
+  		align-content: center;
+	}
 
 	ol, ul {
 		list-style: none;
