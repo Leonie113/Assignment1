@@ -3166,9 +3166,10 @@
 
 		}
 		.container-counters{
+			float: left;
+			padding-top: 200px;
+			margin: 80px;
 			color: white;
-			padding-left:100px;
-			padding-top: 150px;
 			font-size: 40px;
 			
 		}
