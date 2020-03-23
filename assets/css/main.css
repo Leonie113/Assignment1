@@ -58,40 +58,6 @@
 
 /* Containers */
 
-.main-container {
-	height: 46px;
-	  width: auto;
-	  padding: 30px;
-	  margin: 2px;
-	  max-width: 300px;
-	  background-color: #555555;
-	align-content: center;
-	
-}
-.container-inner {
-	height: auto;
-	  border: none;
-	  background-color: #f21040;
-	 max-width: 290px;
-	  vertical-align: center;
-	  padding-top: 12px;
-	  padding-left: 10px;
-	  align-content: center;
-}
-
-.num_tiles {
-	width:30px;
-	height: 30px;
-	background-color: #888888;
-	color: #ffffff;
-	font-size: 22px;
-	text-align: center;
-	line-height: 20px;
-	padding: 3px;
-	margin: 1.5px;
-	font-family: verdana;
-	vertical-align: center;
-  }
 	.container {
 		margin-left: auto;
 		margin-right: auto;
@@ -1682,10 +1648,10 @@
 
 		}
 
-	a {
-		text-decoration: underline;
-		color: #f32853;
-	}
+		a {
+			text-decoration: underline;
+			color: #f32853;
+		}
 
 		a:hover {
 			text-decoration: none;
@@ -3114,7 +3080,7 @@
 			box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
 			visibility: visible;
 		}
-
+		
 /* Banner */
 
 	body.is-touch #banner {
@@ -3149,6 +3115,8 @@
 			margin-bottom: 1.75em;
 			text-transform: uppercase;
 		}
+
+		
 
 		@media screen and (max-width: 1280px) {
 
@@ -3196,6 +3164,9 @@
 				padding: 4em 2em 4em 2em;
 			}
 
+		}
+		.container-counter{
+			font-weight: bold;
 		}
 
 /* Main */
