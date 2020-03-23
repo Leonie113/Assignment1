@@ -3165,6 +3165,19 @@
 			}
 
 		}
+		.container-counters{
+			color: white;
+			padding-left:100px;
+			padding-top: 150px;
+			font-size: 40px;
+			
+		}
+		
+		.container-counters h3{
+			color: white;
+			font-size: 20px;
+		}
+
 	
 
 /* Main */
