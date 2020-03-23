@@ -3167,6 +3167,19 @@
 		}
 		.container-counter{
 			font-weight: bold;
+			margin: 80px;
+		}
+		.icon-box {
+			border: 1px solid #fff;
+			height: 100px;
+			width: 100px;
+			margin: 20px auto;
+			transform: rotate(45deg);
+		}
+		.icon-box img {
+			font-size: 40px;
+			margin: 25px auto;
+			transform: rotate(-45deg);
 		}
 
 /* Main */
