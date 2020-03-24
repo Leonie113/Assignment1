@@ -3169,7 +3169,6 @@
 			margin: 80px;
 			color: white;
 			font-size: 30px;
-			
 		}
 
 		.container-counters .container-box {
@@ -3181,13 +3180,11 @@
 			position: static;
 		}
 		.container-counters .container-box .counter1 {
-			float: left;
-			margin-left: 50;
+			float: left; width: 5em; 
 		}
 
 		.container-counters .container-box .counter2{
-			float: left;
-			margin-left: 250px;	
+			float: left; width: 5em; 
 		}
 		.container-counters h3{
 			color: white;
