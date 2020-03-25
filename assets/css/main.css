@@ -3181,24 +3181,33 @@
 			position: static;
 		}
 		.container-counters .container-box .counter1 {
-			float: left; width: 5em; 
+			float: left; 
+			width: 5em; 
 		}
 
 		.container-counters .container-box .counter2{
-			float: left; width: 5em; 
+			float: left; 
+			width: 5em; 
 		}
 		.container-counters h3{
 			color: white;
 			font-size: 20px;
 		}
-		.clock {
-			
+
+		.container-clock {
 			float: right;
-			width: 200px;
-			height: 200px;
-			background-color: rgba(255, 255, 255, .8);
+			width: 5em;
+			margin: 80px;
+			margin-top: -110px;
+			
+
+		}
+		.clock {
+			float: right;
+			width: 180px;
+			height: 180px;
+			background-color: rgba(212, 212, 212, 0.4);
 			border-radius: 50%;
-			border: 2px solid black;
 			position: relative;
 		}
 		.clock .number {
@@ -3207,7 +3216,7 @@
 			position: absolute;
 			width: 100%;
 			height: 100%;
-			
+			color: #3d3d3d;
 			transform: rotate(var(--rotation));
 		}
 		.clock .number1 {--rotation: 30deg;}
@@ -3228,7 +3237,7 @@
 			bottom: 50%;
 			left: 50%;
 			background-color: black;
-			border: 1px solid white;
+			border: 1px solid grey;
 			border-top-left-radius: 10px;
 			border-top-right-radius: 10px;
 			z-index: 10;
@@ -3238,7 +3247,7 @@
 		.clock::after {
 			content: '';
 			position: absolute;
-			background-color: black;
+			background-color: #383838;
 			z-index: 11;
 			width: 15px;
 			height: 15px;
@@ -3251,17 +3260,17 @@
 		.clock .pointer.second {
 			width: 3px;
 			height: 45%;
-			background-color: blue;
+			background-color: black;
 		}
 		.clock .pointer.minute {
-			width: 7px;
+			width: 6px;
 			height: 40%;
-			background-color: black;
+			background-color: #383838;
 		}
 		.clock .pointer.hour {
-			width: 10px;
-			height: 35%;
-			background-color: black;
+			width: 8px;
+			height: 30%;
+			background-color: #383838;
 		}
 
 /* Main */
