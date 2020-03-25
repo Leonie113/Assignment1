@@ -37,3 +37,4 @@ function textAppear(){
 }
 
 window.addEventListener('scroll', textAppear);
+
