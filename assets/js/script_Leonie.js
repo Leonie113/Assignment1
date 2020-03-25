@@ -38,3 +38,24 @@ function textAppear(){
 
 window.addEventListener('scroll', textAppear);
 
+setInterval(setClock, 1000)
+
+const hourPointer = document.querySelector('[data-hour-pointer]')
+const minutePointer = document.querySelector('[data-minute-pointer]')
+const secondPointer = document.querySelector('[data-second-pointer]')
+
+function setClock(){
+	const currentDate = new Date()
+	const seconds = currentDate.getSeconds() / 60
+	const minutes = (seconds + currentDate.getMinutes()) / 60
+	const hours = (minutes + currentDate.getHours()) / 12
+	setRotation(secondPointer, seconds)
+	setRotation(minutePointer, minutes)
+	setRotation(hourPointer, hours)
+}
+
+function setRotation(element, rotation) {
+	element.style.setProperty('--rotation', rotation * 360)
+
+}
+setClock()
