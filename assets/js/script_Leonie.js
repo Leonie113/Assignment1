@@ -26,3 +26,10 @@ counters.forEach(counter => {
 	updateCount();
 });
 
+function textAppear(){
+	var appearedText = document.querySelector('.appeared-text');
+	var introPosition = appearedText.getBoundingClientRect().top;
+	console.log(introPosition);
+}
+
+textAppear();
