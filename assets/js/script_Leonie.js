@@ -29,7 +29,11 @@ counters.forEach(counter => {
 function textAppear(){
 	var appearedText = document.querySelector('.appeared-text');
 	var introPosition = appearedText.getBoundingClientRect().top;
-	console.log(introPosition);
+	var screenPosition = window.innerHeight / 1.5;
+
+	if(introPosition < screenPosition){
+		appearedText.classList.add('text-appear');
+	}
 }
 
-textAppear();
+window.addEventListener('scroll', textAppear);
