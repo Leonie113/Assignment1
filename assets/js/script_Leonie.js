@@ -79,12 +79,12 @@ var language = {
 
 if (window.location.hash) {
 	if(window.location.hash === '#fr'){
-		banner.textContent = language.fr.title;
+		test.textContent = language.fr.title;
 	}
 }
 if (window.location.hash) {
 	if(window.location.hash === '#de'){
-		banner.textContent = language.de.title;
+		test.textContent = language.de.title;
 	}
 }
 
@@ -93,3 +93,4 @@ for (i = 0; i <= dataReload.length; i++){
 		location.reload(true);
 	};
 }
+

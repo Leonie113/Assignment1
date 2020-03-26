@@ -2601,6 +2601,37 @@
 			font-size: 1.7em;
 			margin-bottom: 0;
 		}
+	.alt .language-dropdown {
+		
+		display: inline-block;
+	}
+	.alt .dropbutton {
+		background-color: rgba(255, 255, 255, 0);
+	}
+	.alt .dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: rgba(212, 212, 212, 0.4);
+		min-width: 100px;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+	.alt .dropdown-content a{
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+		text-align: left;
+	}
+	.alt .dropdown-content a:hover {
+		background-color: #222;
+		
+	}
+	.language-dropdown:hover .dropdown-content {
+		display: block;
+	}
+	.language-dropdown:hover .dropbutton {
+		background-color: rgba(0, 0, 0, 0.2);
+	}
 
 	@media screen and (max-width: 1280px) {
 
@@ -3117,7 +3148,6 @@
 			text-transform: uppercase;
 		}
 
-		
 
 		@media screen and (max-width: 1280px) {
 
