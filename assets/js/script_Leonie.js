@@ -67,30 +67,41 @@ var dataReload = document.querySelectorAll("[data-reload]");
 
 var language = {
 	eng: {
-		title: "Spatial"
+		test: "Spatial"
 	},
 	fr: {
-		title: "Spatiale"
+		test: "Spatiale"
 	},
 	de: {
-		title: "Räumlich"
+		test: "Räumlich"
 	}
 };
 
+
 if (window.location.hash) {
-	if(window.location.hash === '#fr'){
-		test.textContent = language.fr.title;
+	if(window.location.hash === "en"){
+		test.textContent = language.en.test;
 	}
 }
 if (window.location.hash) {
-	if(window.location.hash === '#de'){
-		test.textContent = language.de.title;
+
+	if(window.location.hash === "fr"){
+		
+		test.textContent = language.fr.test;
+	}
+}
+if (window.location.hash) {
+	if(window.location.hash === "de"){
+		test.textContent = language.de.test;
 	}
 }
 
-for (i = 0; i <= dataReload.length; i++){
+for (i = 0; i <= dataReload.length; i++) {
+
 	dataReload[i].onclick = function() {
-		location.reload(true);
-	};
+
+		location.reload();
+	}
 }
+
 

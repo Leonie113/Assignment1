@@ -2620,7 +2620,6 @@
 		padding: 12px 16px;
 		text-decoration: none;
 		display: block;
-		text-align: left;
 	}
 	.alt .dropdown-content a:hover {
 		background-color: #222;
@@ -2628,6 +2627,7 @@
 	}
 	.language-dropdown:hover .dropdown-content {
 		display: block;
+		
 	}
 	.language-dropdown:hover .dropbutton {
 		background-color: rgba(0, 0, 0, 0.2);
@@ -3200,6 +3200,7 @@
 			margin: 80px;
 			color: white;
 			font-size: 30px;
+			width: 100%;
 		}
 
 		.container-counters .container-box {
@@ -3302,7 +3303,8 @@
 			height: 30%;
 			background-color: #383838;
 		}
-
+	
+		
 /* Main */
 
 	#main {
