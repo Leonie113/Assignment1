@@ -60,3 +60,36 @@ function setRotation(element, rotation) {
 
 }
 setClock()
+
+// Sprache der Seite ändern
+
+var dataReload = document.querySelectorAll("[data-reload]");
+
+var language = {
+	eng: {
+		title: "Spatial"
+	},
+	fr: {
+		title: "Spatiale"
+	},
+	de: {
+		title: "Räumlich"
+	}
+};
+
+if (window.location.hash) {
+	if(window.location.hash === '#fr'){
+		banner.textContent = language.fr.title;
+	}
+}
+if (window.location.hash) {
+	if(window.location.hash === '#de'){
+		banner.textContent = language.de.title;
+	}
+}
+
+for (i = 0; i <= dataReload.length; i++){
+	dataReload[i].onclick = function() {
+		location.reload(true);
+	};
+}
