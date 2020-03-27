@@ -77,21 +77,21 @@ var language = {
 	}
 };
 
-
 if (window.location.hash) {
-	if(window.location.hash === "en"){
+	if(window.location.hash === "#en"){
 		test.textContent = language.en.test;
 	}
 }
+
 if (window.location.hash) {
 
-	if(window.location.hash === "fr"){
+	if(window.location.hash === "#fr"){
 		
 		test.textContent = language.fr.test;
 	}
 }
 if (window.location.hash) {
-	if(window.location.hash === "de"){
+	if(window.location.hash === "#de"){
 		test.textContent = language.de.test;
 	}
 }
