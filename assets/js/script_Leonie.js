@@ -105,7 +105,7 @@ for (i = 0; i <= dataReload.length; i++) {
 }
 
 
-//Ajax-Request (best travel destinations)
+//Ajax-Request (Secret Information: generic)
 
 function loadDoc() {
 	var xhttp = new XMLHttpRequest();
