@@ -37,7 +37,6 @@ function textAppear(){
 
 window.addEventListener('scroll', textAppear);
 
-
 // Uhranzeige auf der Startseite
 setInterval(setClock, 1000)
 
@@ -114,6 +113,13 @@ function loadDoc() {
 		  document.getElementById("Ajax").innerHTML = this.responseText;
 		}
 	  };
-	  xhttp.open("GET", "ajax_info.txt", true);
+	  xhttp.open("GET", "ajax_text.txt", true);
 	  xhttp.send();
 	}
+
+// Bilder beim Klicken vergrößern
+
+function ImgBigger (adress) {
+	windowNow = window.open (adress, "2ndWindow", "width=300, 400, left=100, top=200");
+	windowNow.focus();
+}
