@@ -62,47 +62,62 @@ setClock()
 
 // Sprache der Seite ändern
 
-var dataReload = document.querySelectorAll("[data-reload]");
-
 var language = {
 	eng: {
-		test: "Spatial"
+		translation1: "Spatial",
+		translation2: "This is a blog that will help you to use Javascript, HTML and CSS on websites.",
+		translation3: "What's your next adventure?",
+		translation4: "Get Started",
+
 	},
 	fr: {
-		test: "Spatiale"
+		translation1: "Spatiale",
+		translation2: "Il s'agit d'un blog qui vous aidera à utiliser Javascript, HTML et CSS sur les sites Web.",
+		translation3: "Quelle est ta prochaine aventure?",
+		translation4: "Allez",
+	
 	},
 	de: {
-		test: "Räumlich"
-	}
+		translation1: "Räumlich",
+		translation2: "Dies ist ein Blog, der dir dabei helfen wird, Javascript, HTML und CSS auf Webseiten zu verwenden.",
+		translation3: "Was ist dein nächstes Abenteuer?",
+		translation4: "Los gehts",
+
+	},
 };
 
+function Delay() {
+	setTimeout(function(){history.go(0); }, 200);
+}
+
 if (window.location.hash) {
-	if(window.location.hash === "#en"){
-		test.textContent = language.en.test;
+	if(window.location.hash === "#eng"){
+		text1.textContent = language.eng.translation1;
+		text2.textContent = language.eng.translation2;
+		text2_1.textContent = language.eng.translation3;
+		text3.textContent = language.eng.translation4;
+
 	}
 }
 
 if (window.location.hash) {
-
 	if(window.location.hash === "#fr"){
+		text1.textContent = language.fr.translation1;
+		text2.textContent = language.fr.translation2;
+		text2_1.textContent = language.fr.translation3;
+		text3.textContent = language.fr.translation4;
 		
-		test.textContent = language.fr.test;
 	}
 }
 if (window.location.hash) {
 	if(window.location.hash === "#de"){
-		test.textContent = language.de.test;
+		text1.textContent = language.de.translation1;
+		text2.textContent = language.de.translation2;
+		text2_1.textContent = language.de.translation3;
+		text3.textContent = language.de.translation4;
+		
 	}
 }
-
-for (i = 0; i <= dataReload.length; i++) {
-
-	dataReload[i].onclick = function() {
-
-		location.reload();
-	}
-}
-
 
 //Ajax-Request (Secret Information: generic)
 

@@ -33,7 +33,7 @@
 		return b.join('');
 
 	};
-
+	
 	/**
 	 * Panel-ify an element.
 	 * @param {object} userConfig User config.

@@ -2955,7 +2955,7 @@
 /* Menu */
 
 	.navPanelToggle {
-		text-decoration: none;
+
 		text-decoration: none;
 		height: 100%;
 		left: 0;
@@ -3126,8 +3126,24 @@
 		background-size: cover;
 		line-height: 1.75;
 		text-align: center;
+	}
+	#banner #text1 {
+		font-size: 80px;
+		font-weight: bold;
+		color: white;
+	}
+	#banner #text2 {
+		text-transform: uppercase;
+		color: #aaa;
+		font-size: 1.5em;
 		
 	}
+	#banner #text2_1 {
+		text-transform: uppercase;
+		color: #aaa;
+		font-size: 1.5em;
+	}
+
 
 		#banner:last-child {
 			margin-bottom: 0;
@@ -3143,7 +3159,7 @@
 
 		#banner p {
 			color: #aaa;
-			font-size: 1.5em;
+			
 			margin-bottom: 1.75em;
 			text-transform: uppercase;
 		}
@@ -3307,7 +3323,6 @@
 		
 /* Main */
 
-
 	#main {
 		padding-top: 4em;
 		
@@ -3419,10 +3434,3 @@
 				}
 
 		}
-	#Ajax {
-		margin-left: auto;
-		margin-right: auto;
-		width: 80em;
-	}
-	
-	
