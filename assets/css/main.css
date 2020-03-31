@@ -472,6 +472,7 @@
 	.\-1u {
 		margin-left: 8.33333%;
 	}
+	
 
 	@media screen and (max-width: 1680px) {
 
@@ -1979,6 +1980,8 @@
 			}
 
 		}
+	
+	
 
 /* Feature */
 
@@ -3245,6 +3248,20 @@
 		.container-counters h3{
 			color: white;
 			font-size: 20px;
+		}
+
+		@media only screen and (max-width: 600px) {
+			.clock {
+				margin-top: 200px;
+				}
+		}
+		@media only screen and (min-width: 768px) {
+			.clock {
+				margin-top: -1em; 
+			}
+			.container-counters {
+				margin-top: 4em;
+			}
 		}
 
 		.container-clock {
