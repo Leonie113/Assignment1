@@ -86,37 +86,35 @@ var language = {
 	},
 };
 
-function Delay() {
+/*function Delay() {
 	setTimeout(function(){ }, 200);
-}
+} */
 
-if (window.location.hash) {
-	if(window.location.hash === ""){
+function toggleLanguage(lang)
+{
+	if(lang === "english"){
 		text1.textContent = language.eng.translation1;
 		text2.textContent = language.eng.translation2;
 		text2_1.textContent = language.eng.translation3;
 		text3.textContent = language.eng.translation4;
 
 	}
-}
-
-if (window.location.hash) {
-	if(window.location.hash === "#fr"){
+	
+	if(lang === "french"){
 		text1.textContent = language.fr.translation1;
 		text2.textContent = language.fr.translation2;
 		text2_1.textContent = language.fr.translation3;
 		text3.textContent = language.fr.translation4;
 		
 	}
-}
-if (window.location.hash) {
-	if(window.location.hash === "#de"){
+	if(lang === "german"){
 		text1.textContent = language.de.translation1;
 		text2.textContent = language.de.translation2;
 		text2_1.textContent = language.de.translation3;
 		text3.textContent = language.de.translation4;
-		
 	}
+
+
 }
 
 //Ajax-Request (Secret Information: generic)
