@@ -1594,6 +1594,7 @@
 			transition: none !important;
 		}
 
+	
 /* Type */
 
 	body {
@@ -1771,6 +1772,11 @@
 
 	.align-right {
 		text-align: right;
+	}
+
+	#Ajax {
+		margin-left: 30px;
+
 	}
 
 /* Box */

@@ -91,7 +91,7 @@ function Delay() {
 }
 
 if (window.location.hash) {
-	if(window.location.hash === "#eng"){
+	if(window.location.hash === ""){
 		text1.textContent = language.eng.translation1;
 		text2.textContent = language.eng.translation2;
 		text2_1.textContent = language.eng.translation3;
@@ -132,9 +132,11 @@ function loadDoc() {
 	  xhttp.send();
 	}
 
+// Bildergalerie 
+
 // Bilder beim Klicken vergrößern
 
-function ImgBigger (adress) {
+/*function ImgBigger (adress) {
 	windowNow = window.open (adress, "2ndWindow", "width=300, 400, left=100, top=200");
 	windowNow.focus();
-}
+} */
