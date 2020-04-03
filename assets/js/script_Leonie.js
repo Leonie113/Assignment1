@@ -100,11 +100,7 @@ var language = {
 	},
 };
 
-/*function Delay() {
-	setTimeout(function(){ }, 200);
-} */
-
-function toggleLanguage(lang)
+function LanguageSwitch(lang)
 {
 	if(lang === "english"){
 		text1.textContent = language.eng.translation1;
@@ -144,10 +140,4 @@ function loadDoc() {
 	  xhttp.send();
 	}
 
-// Bilder beim Klicken vergrößern
-
-function ImgBigger (adress) {
-	windowNow = window.open (adress, "2ndWindow", "width=300, 400, left=100, top=200");
-	windowNow.focus();
-}
 
