@@ -37,6 +37,21 @@ function textAppear(){
 
 window.addEventListener('scroll', textAppear);
 
+
+// Nameneingabe
+
+function Nameneingabe () {
+var eingabe = prompt ("Bitte nennen Sie uns Ihren Namen", "");
+if (eingabe == "" || eingabe == null) {
+	history.back();
+}
+else {
+	alert("Hallo " + eingabe);
+}
+}
+
+window.setTimeout (Nameneingabe, 1200);
+
 // Uhranzeige auf der Startseite
 setInterval(setClock, 1000)
 
@@ -60,19 +75,6 @@ function setRotation(element, rotation) {
 }
 setClock()
 
-// Nameneingabe
-
-window.setTimeout (Nameneingabe, 1000);
-
-function Nameneingabe () {
-var eingabe = prompt ("Bitte nennen Sie uns Ihren Namen", "");
-if (eingabe == "" || eingabe == null) {
-	history.back();
-}
-else {
-	alert("Hallo " + eingabe);
-}
-}
 
 // Sprache der Seite ändern
 
