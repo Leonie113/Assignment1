@@ -136,3 +136,18 @@ function ImgBigger (adress) {
 	windowNow = window.open (adress, "2ndWindow", "width=300, 400, left=100, top=200");
 	windowNow.focus();
 }
+
+
+// Nameneingabe
+
+window.setTimeout (Nameneingabe, 1000);
+
+function Nameneingabe () {
+var eingabe = prompt ("Bitte nennen Sie uns Ihren Namen", "");
+if (eingabe == "" || eingabe == null) {
+	history.back();
+}
+else {
+	alert("Hallo " + eingabe);
+}
+}
