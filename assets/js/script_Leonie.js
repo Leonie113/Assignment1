@@ -132,15 +132,3 @@ function LanguageSwitch(lang)
 
 }
 
-
-// Nameneingabe
-
-function Nameneingabe () {
-	var eingabe = prompt ("Bitte nennen Sie uns Ihren Namen", "");
-	if (eingabe == "" || eingabe == null) {
-		history.back();
-	}
-	else {
-		alert("Hallo " + eingabe);
-	}
-	}
