@@ -38,21 +38,24 @@ function textAppear(){
 window.addEventListener('scroll', textAppear);
 
 
-// Nameneingabe
-
-function Nameneingabe () {
-var eingabe = prompt ("Bitte nennen Sie uns Ihren Namen", "");
-if (eingabe == "" || eingabe == null) {
-	history.back();
-}
-else {
-	alert("Hallo " + eingabe);
-}
-}
 
 window.setTimeout (Nameneingabe, 1200);
 
+//Ajax-Request (Secret Information: generic)
+
+function ajaxRequest() {
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+		  document.getElementById("Ajax").innerHTML = this.responseText;
+		}
+	  };
+	  xhttp.open("GET", "ajax_text.txt", true);
+	  xhttp.send();
+	}
+
 // Uhranzeige auf der Startseite
+
 setInterval(setClock, 1000)
 
 const hourPointer = document.querySelector('[data-hour-pointer]')
@@ -129,17 +132,15 @@ function LanguageSwitch(lang)
 
 }
 
-//Ajax-Request (Secret Information: generic)
 
-function loadDoc() {
-	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-		  document.getElementById("Ajax").innerHTML = this.responseText;
-		}
-	  };
-	  xhttp.open("GET", "ajax_text.txt", true);
-	  xhttp.send();
+// Nameneingabe
+
+function Nameneingabe () {
+	var eingabe = prompt ("Bitte nennen Sie uns Ihren Namen", "");
+	if (eingabe == "" || eingabe == null) {
+		history.back();
 	}
-
-
+	else {
+		alert("Hallo " + eingabe);
+	}
+	}
